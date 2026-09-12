@@ -275,6 +275,109 @@ textarea {
   text-align: center;
 }
 
+.page {
+  display: grid;
+  gap: 18px;
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
+.page .stats {
+  grid-template-columns: repeat(3, minmax(110px, 1fr));
+}
+
+.cards {
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #dde1d9;
+  border-radius: 8px;
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+}
+
+.card h3 {
+  font-size: 1.02rem;
+  margin: 0;
+}
+
+.card p {
+  color: #60695f;
+  margin: 0;
+}
+
+.card.overdue {
+  border-color: #c96a54;
+}
+
+.group {
+  margin-bottom: 14px;
+}
+
+.status.overdue {
+  background: #f2c5b2;
+  color: #813d2a;
+}
+
+.status.due {
+  background: #f4deb4;
+  color: #694c21;
+}
+
+.status.open {
+  background: #eadbd7;
+  color: #783d34;
+}
+
+.hint {
+  color: #828a80;
+  font-size: 0.85rem;
+}
+
+.materials {
+  border: 1px solid #cfd6cc;
+  border-radius: 6px;
+  color: #5c655b;
+  display: grid;
+  font-size: 0.86rem;
+  gap: 10px;
+  padding: 10px;
+}
+
+.material-row {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin-bottom: 8px;
+}
+
+.materials-list {
+  color: #60695f;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  border-bottom: 1px solid #dde1d9;
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  color: #687166;
+  font-size: 0.85rem;
+}
+
 @media (max-width: 900px) {
   .header,
   .layout {
